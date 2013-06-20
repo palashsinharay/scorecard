@@ -1,0 +1,6 @@
+<label>&nbsp;<input type='radio' name='answer_type' <?php if(!empty($ans_type) and $ans_type=='gaps') echo "checked"?> id="answer_type_g" value='gaps' onclick="jQuery('#fillTheGapsText').show();jQuery('#answersArea').hide();jQuery('#openEndText').hide();jQuery('#questionCorrectCondition').show();" /> <?php _e('Fill The Gaps', 'watupro')?></label> &nbsp;&nbsp;&nbsp;
+		<div id="fillTheGapsText" style="display:<?php echo ($ans_type == 'gaps')?'block':'none'?>;">
+			<p><?php _e('For "fill the gaps" questions simply enter your <b>correctly filled texts</b> and place <b>{{{</b> and <b>}}}</b> around the phrases that should turn into gaps. Example: "<b>The color of sun is {{{yellow}}}.</b>" The student will be shown input field instead of "{{{yellow}}}" in this case.', 'watupro')?></p>
+			<p><?php _e('Points to assign for correctly filled gap:', 'watupro')?> <input type="text" name="correct_gap_points" value="<?php echo @$question->correct_gap_points?>" size="4"> &nbsp; <?php _e('Points to assign for incorrectly filled gap (optional):', 'watupro')?> <input type="text" name="incorrect_gap_points" value="<?php echo @$question->incorrect_gap_points?>" size="4"> <?php _e('(Decimals allowed)', 'watupro')?></p>
+		</div>
+	

@@ -1,0 +1,118 @@
+.watu-question {
+	display:none;
+}
+
+#prev-question {
+	float:left;
+	margin-left: 5px;
+}
+
+form.quiz-form {
+	text-align:left;
+}
+
+.single-page-quiz .watu-question, .single-page-quiz {
+	display:block;
+}
+.single-page-quiz #next-question {
+	display:none;
+}
+.question-content {
+	margin-top:20px;
+}
+
+.show-question {
+	border-bottom:1px solid #000;
+}
+.answer span {
+	padding-right:20px;
+}
+.user-answer span {
+	font-weight:bold;
+	color:blue;
+	background:url(wrong.png) no-repeat right top;
+}
+.correct-answer span {
+	background:url(correct.png) no-repeat right top;
+}
+
+.show-question-content
+{
+    font-weight:bold;
+}
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+p.error
+{
+    clear:both !important;
+    color:red;
+}
+
+#detailsText
+{
+	background-color:red;
+}
+
+.watupro label
+{
+	display:block;
+	float:left;
+	width:150px;
+}
+
+.watupro select
+{
+	min-width:120px;
+}
+
+.watupro-alert, .watupro-success
+{
+	padding:20px;
+	background-color: #EEE;
+	font-weight: bold;
+}
+
+.watupro-error
+{
+	padding:20px;
+	font-weight: bold;
+	background:#EEE;
+	color:red;
+}
+
+.watupro-padded {
+	padding: 20px;
+}
+
+.watupro-warning {
+	font-weight:bold;
+	color:red;
+}
+
+.watupro-help {
+	font-style: italic;
+	font-size:11pt;
+	color:gray;
+}
